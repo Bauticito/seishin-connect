@@ -70,6 +70,70 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .dark {
+    /* Surface */
+    --background: 220 25% 7%;
+    --foreground: 220 15% 92%;
+
+    --card: 220 22% 10%;
+    --card-foreground: 220 15% 92%;
+
+    --popover: 220 22% 10%;
+    --popover-foreground: 220 15% 92%;
+
+    /* Brand — Seishin red (slightly brighter on dark) */
+    --brand: 356 90% 54%;
+    --brand-foreground: 0 0% 100%;
+    --brand-soft: 356 60% 16%;
+
+    --primary: 220 15% 92%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 220 18% 14%;
+    --secondary-foreground: 220 15% 88%;
+
+    --muted: 220 18% 14%;
+    --muted-foreground: 220 10% 62%;
+
+    --accent: 220 18% 16%;
+    --accent-foreground: 220 15% 92%;
+
+    --destructive: 356 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 356 90% 54%;
+
+    /* Status / semáforo (dark) */
+    --status-ok: 152 60% 50%;
+    --status-ok-bg: 152 50% 14%;
+    --status-warn: 38 95% 58%;
+    --status-warn-bg: 38 70% 14%;
+    --status-bad: 356 80% 60%;
+    --status-bad-bg: 356 60% 16%;
+    --status-info: 212 85% 62%;
+    --status-info-bg: 212 60% 16%;
+    --status-neutral: 220 10% 65%;
+    --status-neutral-bg: 220 15% 16%;
+
+    /* Chart palette */
+    --chart-1: 356 80% 60%;
+    --chart-2: 220 15% 75%;
+    --chart-3: 38 90% 58%;
+    --chart-4: 212 85% 62%;
+    --chart-5: 152 60% 52%;
+
+    --sidebar-background: 220 25% 9%;
+    --sidebar-foreground: 220 15% 88%;
+    --sidebar-primary: 356 90% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 18% 14%;
+    --sidebar-accent-foreground: 220 15% 92%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 356 90% 54%;
+  }
 }
 
 @layer base {
