@@ -30,7 +30,7 @@ export function PortalHeader() {
           </div>
           <div>
             <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-              Portal Seishin · Cliente
+              Portal Seishin
             </p>
             <h1 className="text-lg font-semibold leading-tight text-foreground">
               {clientProfile.clientName}
