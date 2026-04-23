@@ -1,16 +1,48 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { PortalHeader } from "@/components/portal/PortalHeader";
+import { ServiceSummary } from "@/components/portal/ServiceSummary";
+import { QCTab } from "@/components/portal/QCTab";
+import { AttendancesTab } from "@/components/portal/AttendancesTab";
+import { WorkOrdersTab } from "@/components/portal/WorkOrdersTab";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background">
+      <PortalHeader />
+
+      <main className="mx-auto max-w-7xl space-y-6 px-6 py-8">
+        <section aria-labelledby="service-heading">
+          <h2 id="service-heading" className="sr-only">
+            Resumen del servicio
+          </h2>
+          <ServiceSummary />
+        </section>
+
+        <section aria-labelledby="ops-heading">
+          <h2 id="ops-heading" className="sr-only">
+            Operación
+          </h2>
+          <Tabs defaultValue="qc" className="space-y-6">
+            <TabsList className="bg-muted">
+              <TabsTrigger value="qc">QC</TabsTrigger>
+              <TabsTrigger value="attendances">Asistencias</TabsTrigger>
+              <TabsTrigger value="workorders">Órdenes</TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="qc" className="mt-0">
+              <QCTab />
+            </TabsContent>
+            <TabsContent value="attendances" className="mt-0">
+              <AttendancesTab />
+            </TabsContent>
+            <TabsContent value="workorders" className="mt-0">
+              <WorkOrdersTab />
+            </TabsContent>
+          </Tabs>
+        </section>
+      </main>
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
