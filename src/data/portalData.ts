@@ -73,7 +73,7 @@ export interface WorkOrder {
 // ──────────────────────────────────────────────────────────────────────────
 
 export const clientProfile: ClientProfile = {
-  clientName: "Industrias Vega del Norte",
+  clientName: "CLIENTE DE EJEMPLO",
   serviceName: "Inspección de calidad y staffing operativo",
   site: "Planta Apodaca — Línea de ensamble 2",
   status: "active",
