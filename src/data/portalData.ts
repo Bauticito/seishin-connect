@@ -74,7 +74,7 @@ export interface WorkOrder {
 
 export const clientProfile: ClientProfile = {
   clientName: "CLIENTE DE EJEMPLO",
-  serviceName: "Inspección de calidad y staffing operativo",
+  serviceName: "ESTAMPADO",
   site: "Planta Apodaca — Línea de ensamble 2",
   status: "active",
   startDate: "2025-09-01",
