@@ -1,6 +1,7 @@
 import { Activity } from "lucide-react";
 import { clientProfile } from "@/data/portalData";
 import { StatusBadge } from "./StatusBadge";
+import { ThemeToggle } from "./ThemeToggle";
 
 const statusLabel: Record<typeof clientProfile.status, { tone: "ok" | "warn" | "info"; label: string }> = {
   active: { tone: "ok", label: "Servicio activo" },
@@ -47,6 +48,7 @@ export function PortalHeader() {
             <p className="text-xs text-muted-foreground">Última actualización</p>
             <p className="text-sm font-medium text-foreground">{formatDateTime(clientProfile.lastUpdated)}</p>
           </div>
+          <ThemeToggle />
         </div>
       </div>
     </header>
